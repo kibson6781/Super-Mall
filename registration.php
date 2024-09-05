@@ -1,17 +1,16 @@
 <?php
-require '../assets/includes/functions.php';
-require '../assets/includes/constants.php';
+require 'assets/includes/constants.php';
+require 'assets/includes/functions.php';
 session_start();
 
 if (!isset($_SESSION['device'])) {
     echo "<script>alert('Please log in.')</script>";
-    header("Location: ../auth"); 
+    header("Location: auth.php"); 
     exit();
 }
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Securing against Header Injection
-    foreach($_POST as $key => $value) {
+    foreach ($_POST as $key => $value) {
         $_POST[$key] = _cleaninjections(trim($value));
     }
 
@@ -30,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if ($con->query($insQuery) === TRUE) {
             echo "<script>alert('Registration successful');</script>";
-            header("Location: ../index.php"); 
+            header("Location: index.php"); 
             exit();
         } else {
             echo "<script>alert('Registration failed');</script>";
@@ -41,20 +40,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../assets/images/Logo.png">
     <title>Plant Registration</title>
-    <link type="text/css" rel="stylesheet" href="../assets/css/style1.css">
+    <link rel="stylesheet" href="assets/css/style1.css">
 </head>
 <body>
     <div class="container">
-        <form action="registration.php" method="post" name="registration-form">
+        <form action="registration.php" method="post">
             <h2>Plant Registration Page</h2>
 
             <div class="grid-container">
@@ -77,16 +73,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         <option value="Konkan">Konkan</option>
                         <option value="Western Maharashtra">Western Maharashtra</option>
                         <option value="Northern Maharashtra">Northern Maharashtra</option>
-                        <option value="Marathwada">Marathwada</option>
                     </select>
                 </div>
 
-                <div class="num-days">
-                    <label for="num-days">Number of Days</label>
-                    <input type="number" id="num-days" name="num-days" min="0" required>
+                <div class="days">
+                    <label for="days">Days</label>
+                    <input type="number" id="days" name="num-days" required>
                 </div>
 
-                <button type="submit" name="register">Register</button>
+                <div class="register">
+                    <button type="submit" name="register">Register</button>
+                </div>
             </div>
         </form>
     </div>
