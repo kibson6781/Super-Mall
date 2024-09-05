@@ -1,6 +1,7 @@
 # Project Report on Intelligent Irrigation System (I2S) for Plant-Specific Hydration
  
 # PROJECT OVERVIEW:
+
 ![image](https://github.com/user-attachments/assets/e4b54e80-5a8c-41a5-9849-5f5ade2736b0)
 
 Project I2S (Intelligent Irrigation System) represent a significant advancement in agricultural technology, offering precise control over water distribution tailored to the specific needs of different plant species. Traditional irrigation methods often involve manual or timer-based watering, which can result in inefficient water usage, over-watering, or under-watering, leading to reduced crop yields and water wastage.
@@ -16,7 +17,8 @@ The mission of intelligent irrigation systems is to revolutionize agriculture by
 The vision of intelligent irrigation systems is to create a future where agriculture is sustainable, efficient, and resilient. These systems envision a world where water resources are managed intelligently, ensuring optimal hydration for every plant while minimizing waste. Through the integration of cutting-edge technology and data-driven decision-making, the vision is to empower farmers to achieve higher yields, better crop quality, and increased profitability. Ultimately, the vision is to foster a more resilient food system that can adapt to changing environmental conditions and contribute to global food security.
 
 # Component Description
-Hardware
+# Hardware
+
 ![image](https://github.com/user-attachments/assets/00d2a1b3-83a6-4c89-88a0-e0483b60244a)
 
 
@@ -42,7 +44,8 @@ When used as a switch, the MOSFET can be turned on and off using a small voltage
 5.	Capacitive Soil moisture sensor:
 A capacitive soil moisture sensor measures soil moisture by detecting changes in capacitance between two conductive plates placed in the soil. It's accurate, affordable, and widely used in agriculture for irrigation management and research purposes.
  
-Software
+# Software
+
 <img width="579" alt="image" src="https://github.com/user-attachments/assets/c745ae49-a265-4f73-912c-5f0e3167e370">
 
 
@@ -64,4 +67,4 @@ PHP is a server-side scripting language used for web development. It's embedded 
 
 
  
- https://kibson6781.github.io/Super-Mall/
+
