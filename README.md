@@ -3,8 +3,9 @@
 # PROJECT OVERVIEW:
 
 ![image](https://github.com/user-attachments/assets/e4b54e80-5a8c-41a5-9849-5f5ade2736b0)
+# Dashboard
 ![WhatsApp Image 2024-09-14 at 3 29 48 AM](https://github.com/user-attachments/assets/b9d6ea0a-9a44-4ac8-8fa8-9d99406118bb)
-                                               Dashboard
+                                           
 
 
 Project I2S (Intelligent Irrigation System) represent a significant advancement in agricultural technology, offering precise control over water distribution tailored to the specific needs of different plant species. Traditional irrigation methods often involve manual or timer-based watering, which can result in inefficient water usage, over-watering, or under-watering, leading to reduced crop yields and water wastage.
